@@ -1,8 +1,7 @@
-/* ============================================================
+/*
    ABBA ONOJA — PORTFOLIO
-   Aesthetic: Editorial / Magazine — Black & White
    Fonts: Playfair Display (display) + Courier Prime (mono)
-============================================================ */
+ */
 
 /* ── VARIABLES ── */
 :root {
@@ -596,16 +595,32 @@ ul { list-style: none; }
     position: fixed;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: var(--bg);
+    background: #ffffff;            /* fully opaque — no rgba bleed */
     flex-direction: column;
     gap: 0;
     border-bottom: 1px solid var(--rule);
-    transform: translateY(-110%);
-    transition: transform 0.3s ease;
     z-index: 99;
+    /* visibility trick: hides completely, still animatable */
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-6px);
+    /* delay visibility change until AFTER opacity fades out */
+    transition:
+      opacity    0.22s ease,
+      transform  0.22s ease,
+      visibility 0s   linear 0.22s;
   }
   .main-nav.open {
+    visibility: visible;            /* show immediately on open */
+    opacity: 1;
+    pointer-events: auto;
     transform: translateY(0);
+    /* no delay — visibility fires instantly so fade-in is visible */
+    transition:
+      opacity    0.22s ease,
+      transform  0.22s ease,
+      visibility 0s   linear 0s;
   }
   .main-nav a {
     padding: 16px var(--side-pad);
