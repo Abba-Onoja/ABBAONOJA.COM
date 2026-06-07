@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abba Onoja — Data Scientist</title>
+  <meta name="description" content="Data Scientist based in Abuja, Nigeria. Specialising in machine learning, predictive analytics, and data-driven applications. BSc Agriculture, University of Abuja." />
+  <meta name="keywords" content="Data Scientist, Python Developer, Data Analyst, Machine Learning, Abuja Nigeria, Abba Onoja, Streamlit" />
+  <meta property="og:title" content="Abba Onoja — Data Scientist" />
+  <meta property="og:description" content="Turning complex data into clarity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">Abba Onoja</a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <a href="Abba Onoja.pdf" download>Resume</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="header-rule"></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-label">Data Developer · Abuja, Nigeria</div>
+    <h1 class="hero-headline">Exploring Data,<br/>One Project<br/>at a Time.</h1>
+    <div class="hero-sub-row">
+      
+      <div class="hero-ctas">
+        <a href="#work" class="btn-primary">View Projects</a>
+        <a href="Abba Onoja.pdf" download class="btn-outline">Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-rule"></div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">7+</span>
+        <span class="stat-label">Tools &amp; Frameworks</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Live Deployed Apps</span>
+      </div>
+    </div>
+  </section>
+
+  <!--WORK / PROJECTS-->
+  <section class="section" id="work">
+    <div class="section-header">
+      <span class="section-label">Section 01 · Projects</span>
+      <div class="section-rule"></div>
+    </div>
+    <div class="work-header-row">
+      <h2 class="section-title">Selected Work</h2>
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+        <button class="filter-btn" data-filter="analysis">Analysis</button>
+        <button class="filter-btn" data-filter="viz">Visualisation</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- 2a: Abuja Rental Prediction -->
+      <article class="project-card clickable-card"
+               data-tags="ml analysis"
+               data-href="https://abuja-rental-prediction.streamlit.app">
+        <div class="project-meta-row">
+          <span class="project-tag">Machine Learning · Streamlit</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3 class="project-title">Abuja Rental<br/>Market Prediction</h3>
+        <p class="project-desc">An end-to-end ML dashboard that scrapes property listings from Jiji, PropertyPro.ng, and Nigeria Property Centre, then serves a Random Forest model through a multipage Streamlit app. Users can estimate fair market rent by district, property type, and bedroom count across the Abuja Municipal Area Council — bringing some much-needed transparency to a market that is historically difficult to read.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>BeautifulSoup</span><span>Streamlit</span><span>Plotly</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Random Forest · R² 0.761</span>
+          <a href="https://github.com/Abba-Onoja/Abuja-Rental-Prediction-With-Streamlit"
+             target="_blank"
+             class="project-link-github"
+             onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 2b: Tip Prediction — -->
+      <article class="project-card clickable-card"
+               data-tags="ml analysis"
+               data-href="https://github.com/Abba-Onoja/Tip-Prediction-Using-ML-Models">
+        <div class="project-meta-row">
+          <span class="project-tag">Regression · Analysis</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h3 class="project-title">Tip Prediction<br/>Using ML Models</h3>
+        <p class="project-desc">A practice project built to get hands-on with regression concepts using the classic Seaborn tips dataset. The goal was straightforward: can you predict how much someone will tip based on their bill, party size, day of the week, and whether they smoke? Five models were trained and compared — including Gradient Boosting with GridSearchCV hyperparameter tuning — to see which one reads the table best.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>Seaborn</span><span>Matplotlib</span><span>Jupyter</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">5 Models · GridSearchCV Tuning</span>
+          <a href="https://github.com/Abba-Onoja/Tip-Prediction-Using-ML-Models"
+             target="_blank"
+             class="project-link-github"
+             onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </article>
+      <!-- 2c: Compound Interest Calculator -->
+      <article class="project-card clickable-card"
+               data-tags="analysis viz"
+               data-href="https://compound-interest-calculator-with.streamlit.app">
+        <div class="project-meta-row">
+          <span class="project-tag">Visualisation · Finance</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3 class="project-title">Compound Interest<br/>Calculator</h3>
+        <p class="project-desc">A Streamlit web app for comparing two investment scenarios side by side. Built as a deep dive into Streamlit's reactive state system and Plotly's interactive charting. The app handles varying compounding frequencies — daily, monthly, annually — and calculates an effective rate per payment period when contribution schedules and compounding intervals differ. Includes a growth line chart, an annual interest histogram, and a CSV export.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Streamlit</span><span>Pandas</span><span>Plotly</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Dual Scenario · CSV Export</span>
+          <a href="https://github.com/Abba-Onoja/Compound-Interest-Calculator-With-Streamlit"
+             target="_blank"
+             class="project-link-github"
+             onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- 2d: Service Gap Finder — Coming Soon -->
+      <article class="project-card coming-soon-card" data-tags="analysis">
+        <div class="project-meta-row">
+          <span class="project-tag">Geospatial · Analysis</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">Service Gap Finder<br/>for Abuja</h3>
+        <p class="project-desc">A lot of residential areas in Abuja — particularly the satellite towns — lack access to basic everyday services like laundry and last-mile logistics. This project maps those gaps. It identifies neighbourhoods where residents have to travel unreasonable distances to access a simple service, using publicly available location data and proximity analysis. The goal is a clear, visual picture of where service demand exists but supply does not.</p>
+        <div class="project-stack">
+          <span>Python</span><span>GeoPandas</span><span>Folium</span><span>Pandas</span><span>Streamlit</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Proximity Analysis · Mapping</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+      <!-- 2e: Agricultural Policy Monitor — Coming Soon -->
+      <article class="project-card coming-soon-card" data-tags="analysis ml">
+        <div class="project-meta-row">
+          <span class="project-tag">NLP · Policy · LLM</span>
+          <span class="project-year coming-soon-badge">Coming Soon</span>
+        </div>
+        <h3 class="project-title">Agricultural Policy<br/>Monitor</h3>
+        <p class="project-desc">Nigerian agricultural policy is scattered across government portals that most people never read. This Streamlit app pulls from those sources, aggregates the relevant documents, and uses a language model to surface plain-English summaries of new policies, regulatory changes, and funding announcements. The intended user is a farmer, cooperative, or agribusiness that needs to stay informed without spending hours parsing government language.</p>
+        <div class="project-stack">
+          <span>Python</span><span>LLM API</span><span>BeautifulSoup</span><span>Streamlit</span><span>Pandas</span>
+        </div>
+        <div class="project-links">
+          <span class="project-model-note">Web Scraping · LLM Summarisation</span>
+          <span class="project-link-github" style="opacity:0.3;">GitHub ↗</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <span class="section-label">Section 02 · About</span>
+      <div class="section-rule"></div>
+    </div>
+    <h2 class="section-title">The Person<br/>Behind the Data</h2>
+
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <div class="about-photo-frame">
+          <img src="onoja.jpg" alt="A.O" class="about-photo">
+        </div>
+        <div class="about-quick-info">
+          <div class="quick-row">
+            <span class="q-label">Location</span>
+            <span class="q-val">Abuja, Nigeria</span>
+          </div>
+          <div class="quick-row">
+            <span class="q-label">Degree</span>
+            <span class="q-val">BSc Agriculture<br/>Univ. of Abuja, 2019–2025</span>
+          </div>
+          <div class="quick-row">
+            <span class="q-label">Status</span>
+            <span class="q-val">Open to Opportunities</span>
+          </div>
+          <div class="quick-row">
+            <span class="q-label">Email</span>
+            <a href="mailto:abbaonoja38@gmail.com" class="q-val q-link">abbaonoja38@gmail.com</a>
+          </div>
+          <div class="quick-row">
+            <span class="q-label">Coursera</span>
+            <a href="https://coursera.org/share/5edd9739cab5f2b988f265fe071bbac1"
+               target="_blank" class="q-val q-link">IBM Data Science ↗</a>
+          </div>
+          <div class="quick-row">
+            <span class="q-label">CodeSignal</span>
+            <a href="https://codesignal.com/learn/certificates/cmhtfvbmp00chl4044gxwhlvk/course-paths/4"
+               target="_blank" class="q-val q-link">Journey into Data Science with Python ↗</a>
+          </div>
+          <div class="quick-row">
+            <span class="q-label">CodeSignal</span>
+            <a href="https://codesignal.com/learn/certificates/cmhtfvbmp00chl4044gxwhlvk/course-paths/164"
+               target="_blank" class="q-val q-link">Unlocking Data Insights with PostgreSQL ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <p class="about-lead">Aspiring data scientist passionate about transforming complex data into actionable insights.</p>
+        <p class="about-body">After earning the IBM Data Science Certificate on Coursera and completing CodeSignal's intermediate path, I’ve focused on hands-on building. I specialize in wrangling datasets with Pandas, training models with Scikit-Learn, and deploying interactive results using Streamlit and Plotly to help teams make data-driven decisions. I am deeply committed to continuous learning and always looking to build innovative, data-driven solutions.</p>
+        
+
+        <div class="tools-section">
+          <div class="tools-label">Tools &amp; Technologies</div>
+          <div class="tools-marquee-wrap">
+            <div class="tools-marquee" aria-hidden="true">
+              <span>Python</span><span>·</span>
+              <span>Pandas</span><span>·</span>
+              <span>NumPy</span><span>·</span>
+              <span>Scikit-Learn</span><span>·</span>
+              <span>Matplotlib</span><span>·</span>
+              <span>Seaborn</span><span>·</span>
+              <span>Streamlit</span><span>·</span>
+              <span>Plotly</span><span>·</span>
+              <span>SQL</span><span>·</span>
+              <span>PostgreSQL</span><span>·</span>
+              <span>Excel</span><span>·</span>
+              <span>BeautifulSoup</span><span>·</span>
+              <span>HTML/CSS/JS</span><span>·</span>
+              <span>Python</span><span>·</span>
+              <span>Pandas</span><span>·</span>
+              <span>NumPy</span><span>·</span>
+              <span>Scikit-Learn</span><span>·</span>
+              <span>Matplotlib</span><span>·</span>
+              <span>Seaborn</span><span>·</span>
+              <span>Streamlit</span><span>·</span>
+              <span>Plotly</span><span>·</span>
+              <span>SQL</span><span>·</span>
+              <span>PostgreSQL</span><span>·</span>
+              <span>Excel</span><span>·</span>
+              <span>BeautifulSoup</span><span>·</span>
+              <span>HTML/CSS/JS</span><span>·</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer">
+    <div class="footer-rule"></div>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">Abba Onoja</span>
+        <span class="footer-tagline">Data Developer · Abuja, Nigeria · 2026</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:abbaonoja38@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/abba-o-050b003a8/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Abba-Onoja" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Abba Onoja. All rights reserved.</span>
+      <span>Built with intention.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
