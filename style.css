@@ -96,7 +96,7 @@ ul { list-style: none; }
 
 /* ── HERO ── */
 .hero {
-  padding-top: calc(var(--nav-h) + 72px);
+  padding-top: calc(var(--nav-h) + 45px);
   padding-bottom: 72px;
   padding-left: var(--side-pad);
   padding-right: var(--side-pad);
@@ -106,7 +106,7 @@ ul { list-style: none; }
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: var(--text-muted);
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 .hero-headline {
   font-family: var(--font-display);
